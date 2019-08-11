@@ -1,3 +1,13 @@
+### webpack多页应用配置过程
+
+1. 多个入口(entry),每个页面对应一个入口,理解为 js 资源.
+2. 多个 html 实例,webpack 使用html-webpack-plugin 插件来生成 html 页面.
+3. 每个页面需要对应的 css 文件.webpack 使用 extract-text-webpack-plugin 抽取 css.
+
+``` js
+npm install --save-dev html-webpack-plugin
+````
+
 
 ### css3中-moz、-ms、-webkit,-o前缀分别表示：
 
@@ -235,3 +245,6 @@ transition的优点在于简单易用，但是它有几个很大的局限。
 （4）一条transition规则，只能定义一个属性的变化，不能涉及多个属性。 
 
 animation属性类似于transition，他们都是随着时间改变元素的属性值，其主要区别在于：transition需要触发一个事件才会随着时间改变其CSS属性；animation在不需要触发任何事件的情况下，也可以显式的随时间变化来改变元素CSS属性，达到一种动画的效果。
+
+
+
