@@ -78,3 +78,38 @@
         transform: translate(0,-8px);
     }
 }
+/*box*/
+.box-div {
+    width: 301px;
+    height: 300px;
+    overflow: hidden;
+}
+.box {
+    width: 1926px;
+    height: 320px;
+    will-change: transform;
+    background: url(./images/css_sprites.png) no-repeat -10px -10px;
+    animation: frame 500ms steps(6) both infinite;
+}
+@keyframes frame {
+    0% {transform: translate3d(-10px,-10px,0);}
+    100% {transform: translate3d(-1926px,-10px,0);}
+}
+
+/*box2*/
+.box2 {
+    width: 301px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url(./images/css_sprites.png);
+    animation: beat 500ms steps(1,end) both infinite;
+}
+@keyframes beat {
+    0% {background-position: 0 0;}
+    15% {background-position: -10px -10px;}
+    30% {background-position: -331px -10px;}
+    45% {background-position: -652px -10px;}
+    60% {background-position: -973px -10px;}
+    75% {background-position: -1294px -10px;}
+    100% {background-position: -1615px -10px;}
+}
