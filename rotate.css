@@ -103,6 +103,7 @@
     background-repeat: no-repeat;
     background-image: url(./images/css_sprites.png);
     animation: beat 500ms steps(1,end) both infinite;
+    /* animation: beat 10s linear both infinite;  */ /*这样的动画不是阶梯的，是位移的效果，不是切换的效果*/
 }
 @keyframes beat {
     0% {background-position: 0 0;}
