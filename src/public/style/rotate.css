@@ -88,7 +88,7 @@
     width: 1926px;
     height: 320px;
     will-change: transform;
-    background: url(./images/css_sprites.png) no-repeat -10px -10px;
+    background: url(../images/css_sprites.png) no-repeat -10px -10px;
     animation: frame 500ms steps(6) both infinite;
 }
 @keyframes frame {
@@ -101,7 +101,7 @@
     width: 301px;
     height: 300px;
     background-repeat: no-repeat;
-    background-image: url(./images/css_sprites.png);
+    background-image: url(../images/css_sprites.png);
     animation: beat 500ms steps(1,end) both infinite;
     /* animation: beat 10s linear both infinite;  */ /*这样的动画不是阶梯的，是位移的效果，不是切换的效果*/
 }
